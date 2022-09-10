@@ -28,7 +28,8 @@ public class Myclass {
 			sum= sum+Integer.parseInt(items.get(i).getText()); 
 			//System.out.println(sum);
 		}
-         driver.findElement(By.id("#total")).getText();
+
+        driver.findElement(By.id("#total")).getText().split(":")[1].trim();
 
 	
 	}}
